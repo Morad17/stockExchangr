@@ -2,11 +2,10 @@ import type { NextConfig } from "next";
 import path from "path";
 
 const nextConfig: NextConfig = {
-  outputFileTracingRoot: path.join(__dirname),
-
-  sassOptions: {
-    additionalData: `@import "./scss/variables.scss";`,
-  },
+  // sassOptions: {
+  //   includePaths: [path.join(__dirname, "src", "scss")],
+  //   additionalData: `@use "variables" as *;`,
+  // },
 };
 
 export default nextConfig;
