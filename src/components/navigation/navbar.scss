@@ -4,7 +4,20 @@
   background-color: var(--dark-blue);
   justify-content: space-between;
   color: white;
-  padding: 10px 20px;
+  padding: 1rem 1.5rem;
   align-items: center;
   z-index: 11;
+  height: 3rem;
+}
+
+//Side Navbar
+.side-navbar {
+  background-color: var(--dark-blue);
+  color: white;
+  .nav-group {
+    padding: 1rem;
+  }
+  .link-text {
+    display: none;
+  }
 }

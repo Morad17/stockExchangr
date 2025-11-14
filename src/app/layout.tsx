@@ -18,9 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={`${inter.className} main-layout`}>
         <Navbar />
-        {children}
+        <div className="children-div">{children}</div>
         <ToastContainer
           position="top-right"
           autoClose={3000}
