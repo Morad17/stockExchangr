@@ -1,12 +1,13 @@
 "use server";
 
 export async function getCryptoData() {
-  const url = "https://pro-api.coingecko.com/api/v3/global";
+  const url = "https://api.coingecko.com/api/v3/global";
   const options = {
     method: "GET",
     headers: {
-      "x-cg-pro-api-key": process.env.COINGECKO_API_KEY || "",
+      "x-cg-demo-api-key": process.env.COINGECKO_API_KEY || "",
     },
+    body: undefined,
   };
 
   try {
